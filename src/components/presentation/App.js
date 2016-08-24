@@ -2,17 +2,14 @@ import React  from 'react';
 import '../../App.css';
 
 import SearchContainer from '../container/SearchContainer';
-import ArtistListContainer from '../container/ArtistListContainer';
-import AlbumContainer from '../container/AlbumContainer';
 
-const App = () => {
+const App = ({children}) => {
 
   return (
     <div className="app">
       <SearchContainer />
       <div className="results">
-        <ArtistListContainer />
-        <AlbumContainer />
+        { children }
       </div>
     </div>
   );

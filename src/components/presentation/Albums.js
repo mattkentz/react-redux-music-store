@@ -3,6 +3,10 @@ import React, { Component }  from 'react';
 
 class Albums extends Component {
 
+  componentWillMount () {
+    this.props.fetchAlbums(this.props.selectedArtist);
+  }
+
   componentWillReceiveProps (nextProps) {
     if (nextProps.selectedArtist !== this.props.selectedArtist) {
       this.props.fetchAlbums(nextProps.selectedArtist);

@@ -1,4 +1,5 @@
 import React  from 'react';
+import { Link } from 'react-router'
 
 const ArtistList = ({ artists, updateSelectedArtist }) => {
 
@@ -8,9 +9,11 @@ const ArtistList = ({ artists, updateSelectedArtist }) => {
       <ul>
         { artists.map( artist => {
           return (
-            <li key={artist.id} onClick={() => updateSelectedArtist(artist.id)}>
+          <Link key={artist.id} to={`/artist/${artist.id}`}>
+            <li onClick={() => updateSelectedArtist(artist.id)}>
               {artist.name}
             </li>
+          </Link>
           )
         })}
       </ul>
