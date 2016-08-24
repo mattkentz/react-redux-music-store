@@ -3,15 +3,17 @@ import '../../App.css';
 
 import SearchContainer from '../container/SearchContainer';
 import ArtistListContainer from '../container/ArtistListContainer';
+import AlbumContainer from '../container/AlbumContainer';
 
 const App = () => {
 
   return (
-    <div>
-      <ul>
-        <SearchContainer />
+    <div className="app">
+      <SearchContainer />
+      <div className="results">
         <ArtistListContainer />
-      </ul>
+        <AlbumContainer />
+      </div>
     </div>
   );
 }
