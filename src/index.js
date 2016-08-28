@@ -9,7 +9,7 @@ import configureStore from './config/store';
 //Components
 import AppContainer from './components/container/AppContainer';
 import ArtistListContainer from './components/container/ArtistListContainer';
-import AlbumContainer from './components/container/AlbumContainer';
+import AlbumListContainer from './components/container/AlbumListContainer';
 
 const store = configureStore(rootReducer);
 
@@ -17,7 +17,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={AppContainer}>
-        <Route path="/artist/:id" component={AlbumContainer} />
+        <Route path="/artist/:id" component={AlbumListContainer} />
         <IndexRoute component={ArtistListContainer} />
       </Route>
     </Router>

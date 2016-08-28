@@ -1,4 +1,4 @@
-import Albums from '../presentation/Albums';
+import AlbumList from '../presentation/AlbumList';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state, props) => {
@@ -33,6 +33,6 @@ function fetchAlbums(id) {
   }
 }
 
-const AlbumsContainer = connect(mapStateToProps, mapDispatchToProps)(Albums);
+const AlbumListContainer = connect(mapStateToProps, mapDispatchToProps)(AlbumList);
 
-export default AlbumsContainer;
+export default AlbumListContainer;

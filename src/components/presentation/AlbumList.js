@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 
 
-class Albums extends Component {
+class AlbumList extends Component {
 
   componentWillMount () {
     this.props.fetchAlbums(this.props.selectedArtist);
@@ -32,4 +32,4 @@ class Albums extends Component {
   }
 }
 
-export default Albums;
+export default AlbumList;
