@@ -9,10 +9,10 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateSelectedArtist: (id) => {
+    updateSelectedArtist: (artist) => {
       dispatch({
         type: 'UPDATE_SELECTED_ARTIST',
-        value: id
+        value: artist
       })
     }
   }

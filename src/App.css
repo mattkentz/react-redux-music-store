@@ -6,10 +6,70 @@
   display: flex;
 }
 
-.artists, .albums {
-  margin: 2em;
-  width: 50%
+/* ArtistList */
+.artistList__artists {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.artistList a {
+  text-decoration: none;
+}
 
+/* AlbumList */
+.albumList__albums {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.albumList a {
+  text-decoration: none;
+}
+
+/* Artist */
+
+.artist {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  margin: 2em;
+  width: 30em;
+}
+
+.artist__details {
+  margin-left: 1em;
+  align-self: center;
+}
+
+.artist__logo {
+  width: 10em;
+  height: 10em;
+}
+
+.artist__genre {
+  border: 1px solid #b0b0b0;
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  text-align: center;
+  margin-right: 1em;
+  padding: 0.15em;
+}
+
+/* Album */
+
+.album {
+  display: flex;
+  color: black;
+  margin: 2em;
+  width: 20em;
+}
+
+.album__details {
+  margin-left: 1em;
+  align-self: center;
+}
+
+.album__logo {
+  width: 10em;
+  height: 10em;
+}

@@ -1,31 +1,34 @@
 import React, { Component }  from 'react';
 import Album from './Album';
+import Artist from './Artist';
 
 
 class AlbumList extends Component {
 
   componentWillMount () {
-    this.props.fetchAlbums(this.props.selectedArtist);
+    this.props.fetchAlbums(this.props.selectedArtist.id);
   }
 
   componentWillReceiveProps (nextProps) {
     if (nextProps.selectedArtist !== this.props.selectedArtist) {
-      this.props.fetchAlbums(nextProps.selectedArtist);
+      this.props.fetchAlbums(nextProps.selectedArtist.id);
     }
   }
 
   render () {
-    const { albums } = this.props;
+    const { albums, selectedArtist } = this.props;
     return (
-      <div className="albums">
+      <div className="albumList">
+        <Artist artist={selectedArtist}/>
+        <hr/>
         <h1>Albums</h1>
-        <ul>
+        <div className="albumList__albums">
           { albums.map( album => {
             return (
-              <Album album={album}/>
+                <Album key={album.id} album={album}/>
             )
           })}
-        </ul>
+        </div>
       </div>
     )
   }

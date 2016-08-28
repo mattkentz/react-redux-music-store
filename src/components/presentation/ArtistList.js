@@ -1,18 +1,20 @@
 import React  from 'react';
 import Artist from './Artist';
+import SearchContainer from '../container/SearchContainer';
 
 const ArtistList = ({ artists, updateSelectedArtist }) => {
 
   return (
-    <div className="artists">
+    <div className="artistList">
+      <SearchContainer />
       <h1>Artists</h1>
-      <ul>
-        { artists.map( artist => {
-          return (
-          <Artist artist={artist} handleClick={updateSelectedArtist}/>
-          )
-        })}
-      </ul>
+        <div className="artistList__artists">
+            { artists.map( artist => {
+                return (
+                    <Artist key={artist.id} artist={artist} handleClick={updateSelectedArtist}/>
+                )
+            })}
+        </div>
     </div>
   );
 }
