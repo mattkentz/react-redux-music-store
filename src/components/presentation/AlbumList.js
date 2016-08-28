@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import Album from './Album';
 
 
 class AlbumList extends Component {
@@ -21,9 +22,7 @@ class AlbumList extends Component {
         <ul>
           { albums.map( album => {
             return (
-              <li key={album.id}>
-                {album.name}
-              </li>
+              <Album album={album}/>
             )
           })}
         </ul>
