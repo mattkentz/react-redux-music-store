@@ -9,6 +9,9 @@ const Artist = ({ artist, handleClick }) => {
         }
     }
 
+    if (!artist || artist.length < 1) {
+        return <h1>Loading artist...</h1>;
+    }
     return (
         <Link to={`/artist/${artist.id}`}>
             <div className="artist" onClick={() => handleClick(artist)}>
