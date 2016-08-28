@@ -1,0 +1,8 @@
+.artistList__artists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artistList a {
+    text-decoration: none;
+}

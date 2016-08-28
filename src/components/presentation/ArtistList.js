@@ -1,5 +1,7 @@
 import React  from 'react';
 import Artist from './Artist';
+import '../../css/ArtistList.css';
+
 import SearchContainer from '../container/SearchContainer';
 
 const ArtistList = ({ artists, updateSelectedArtist }) => {

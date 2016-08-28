@@ -1,5 +1,6 @@
 import React  from 'react';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+import '../../css/Artist.css';
 
 const Artist = ({ artist, handleClick }) => {
 

@@ -1,0 +1,8 @@
+.albumList__albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.albumList a {
+    text-decoration: none;
+}

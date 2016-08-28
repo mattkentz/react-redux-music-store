@@ -1,0 +1,16 @@
+.album {
+    display: flex;
+    color: black;
+    margin: 2em;
+    width: 20em;
+}
+
+.album__details {
+    margin-left: 1em;
+    align-self: center;
+}
+
+.album__logo {
+    width: 10em;
+    height: 10em;
+}

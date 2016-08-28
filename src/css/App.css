@@ -1,0 +1,7 @@
+.app {
+  padding: 3em;
+}
+
+.results {
+  display: flex;
+}

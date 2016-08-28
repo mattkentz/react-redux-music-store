@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import '../../css/AlbumList.css';
 import Album from './Album';
 import Artist from './Artist';
 
